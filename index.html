@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project</title>
+</head>
+<style>
+    .container {
+        /* max-width: 400px; */
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .error-message {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2 style="font-family: system-ui;margin-top: 17rem; font-size: 2.5rem;margin-left: 45rem;">Enter Your Name</h2>
+        <div class="input-field">
+            <input type="text" id="nameInput" placeholder="Enter your name" style="font-family: system-ui;margin-top: .3rem; font-size: 1.5rem;margin-left: 44rem;
+            background-color: transparent;border-radius: 1rem; height: 2.3rem;">
+            <div id="error" class="error-message"
+                style="font-family: system-ui;margin-top: 1rem; font-size: 1rem;margin-left: 50rem;"></div>
+        </div>
+        <button onclick="submitName()" style="font-family: system-ui;margin-top: .5rem; font-size: 1.5rem;margin-left: 49rem;width: 13rem;
+        background-color: transparent;border-radius: 1rem;  ">Submit</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function submitName() {
+            var inputname = document.getElementById("nameInput").value;
+
+            if (inputname === "") {
+                document.getElementById("error").textContent = "Please enter your name";
+                return;
+            }
+            // current name ko string mai save kr rhy hy
+            localStorage.setItem("name", inputname);
+            console.log(inputname);
+            // Move to the next page
+            window.location.href = "nextpage.html";
+        }
+
+    </script>
+
+</body>
+
+</html>

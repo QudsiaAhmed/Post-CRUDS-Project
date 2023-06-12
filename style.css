@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/773/375/small_2x/space-pastel-purple-background-free-vector.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: system-ui;
+    width: 99%;
+    height: 98vh;
+}
+
+.form-area {
+    display: grid;
+    place-items: center;
+    background-color: none;
+
+    /* height: 100vh; */
+}
+
+.wrapper {
+    width: 400px;
+    height: 300px;
+    color: #fff;
+    padding: 50px 30px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.wrapper p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: rgb(249, 245, 245);
+    font-size: 1.5rem;
+}
+
+.wrapper input {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#Add {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: deepskyblue;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+    border: none;
+}
+
+#Add:hover {
+    background-color: rgb(130, 201, 225);
+    cursor: pointer;
+}
+
+.editButton {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background-color: deepskyblue;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+    border: none;
+}
+
+.editButton:hover {
+    background-color: rgb(130, 201, 225);
+    cursor: pointer;
+}
+
+.deleteButton {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 9px;
+    background-color: deepskyblue;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+    border: none;
+}
+
+.deleteButton:hover {
+    background-color: rgb(130, 201, 225);
+    cursor: pointer;
+}
+
+.Editable_feild {
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    /* background-color: transparent; */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Editable_feild input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+}
+
+.Editable_feild .saveButton {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: deepskyblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.Editable_feild .saveButton:focus {
+    outline: none;
+}
+
+.Editable_feild .saveButton:active {
+    transform: translateY(1px);
+}
